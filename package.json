@@ -2,16 +2,8 @@
   "name": "testefillet",
   "version": "1.0.0",
   "description": "Teste da Fillet",
-  "main": "src/index.js",
-  "private": true,
-  "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js src test/unit",
-    "build": "node build/build.js"
-  },
+  "main": "server.js",
+  "private": true,  
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
