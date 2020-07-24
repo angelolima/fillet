@@ -18,6 +18,6 @@ function execSQLQuery(sqlQry, res){
     });
   }
 
-  module.exports = (req, res) => {
-    res.sendfile('./src/app/html/apilist.html')
+module.exports = (req, res) => {
+    res.sendfile('./src/app/html/apiform.html')
 }
