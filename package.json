@@ -2,8 +2,8 @@
   "name": "testefillet",
   "version": "1.0.0",
   "description": "Teste da Fillet",
-  "main": "server.js",
-  "private": true,  
+  "main": "app.js",
+  "private": true,
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
@@ -52,8 +52,8 @@
     "webpack-merge": "^4.1.0"
   },
   "engines": {
-    "node": "&gt;= 6.0.0",
-    "npm": "&gt;= 3.0.0"
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   },
   "author": "Angelo Lima <angelolima@gmail.com> (https://www.studiohttp.com.br)",
   "license": "MIT",
