@@ -1,5 +1,5 @@
-const app = require('./src/config/custom-express');
+const app = require('./src/config/custom-express'); 
 
 app.listen(8080, () => {
-    console.log('Servidor rodando na porta 8080...')
+    console.log("Running on 8080...");
 });

@@ -1,13 +1,15 @@
-const express = require('express');
-const app = express();
+const express = require('express'); 
+const faker = require('faker');
 const bodyParser = require('body-parser');
-const port = 8080; //porta padrão
+const expressLayouts = require('express-ejs-layouts');
 const mysql = require('mysql');
+const app = express(); 
 
-const routes = require('../app/routes');
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
+app.use(bodyParser.urlencoded({ extended: true })); 
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+const routes = require('../app/routes'); 
 app.use('/', routes);
 
 module.exports = app;
