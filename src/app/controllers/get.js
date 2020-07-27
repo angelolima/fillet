@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-    res.send({ message: "Home" });
+    res.render('base', {title:"Titulo da Pagina"});
 }
