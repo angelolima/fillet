@@ -1,3 +1,6 @@
 module.exports = (req, res) => {
-    res.render('pages/index', {title:"Titulo da Pagina"});
+    //res.render('pages/index', {}); 
+    res.render('pages/home', {
+        title: "Pagina Inicial"
+    });
 }

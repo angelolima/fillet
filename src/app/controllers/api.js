@@ -19,5 +19,5 @@ function execSQLQuery(sqlQry, res){
   }
 
   module.exports = (req, res) => {
-    res.send({ message: "API"});
+    res.json(execSQLQuery("SELECT * FROM jobs"));
 }
