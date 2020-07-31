@@ -1,4 +1,72 @@
+<%- contentFor('CSScontainer') %>
+
+<%- contentFor('JScontainer') %>
+
 <%- contentFor('body') %>
-<div class="jumbotron text-center">
-    Página Inicial
-</div>
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Application<br> Form Page</h2>
+            <p>Informe os dados ao lado.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div>
+            
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="right">
+            
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
+                        Teste Fillet - Node.js, Express, EJS, MySQL
+                    </a>
+            
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/api/view/optin" target="_blank">API</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </nav>
+      <form name="FormX" method="POST">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               
+                  <div class="form-group">
+                     <label>Nome</label>
+                     <input type="text" class="form-control" id="nome" name="optin[nome]" placeholder="Nome">
+                  </div>
+                  <div class="form-group">
+                     <label>E-mail</label>
+                     <input type="email" class="form-control" id="email" name="optin[email]" placeholder="E-mail">
+                  </div>
+                  <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" class="form-control" id="password" name="optin[password]" placeholder="Senha">
+                 </div> 
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-12">
+          <div class="login-form">
+              
+                <div class="form-group">
+                   <label>Sobrenome</label>
+                   <input type="text" class="form-control" id="sobrenome" name="optin[sobrenome]" placeholder="Sobrenome">
+                </div>
+                <div class="form-group">
+                  <label>Telefone</label>
+                  <input type="text" class="form-control" id="telefone" name="optin[telefone]" placeholder="Telefone">
+               </div>
+               <div class="form-group">
+                  <label>Confirme a Senha</label>
+                  <input type="password" class="form-control" id="repassword" name="optin[repassword]" placeholder="Confirme a Senha">
+               </div>
+                
+               <button type="submit" class="btn btn-black flex-3">Login</button>
+              
+          </div>
+         </div>
+      </form>
+      </div>

@@ -1,3 +1,7 @@
+<%- contentFor('CSScontainer') %>
+
+<%- contentFor('JScontainer') %>
+
 <%- contentFor('body') %>
 <div class="jumbotron text-center">
     <h1>O Time!</h1>
@@ -12,24 +16,14 @@
           </tr>
         </thead>
         <tbody>
+          <% data.forEach(function (data) { %>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row"><%= data.codigo %></th>
+            <td><%= data.transito %></td>
+            <td><%= data.titulo %></td>
+            <td><%= data.data_entrega %></td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          <% }) %>
         </tbody>
       </table>
         <% for (usuario of usuarios){%>
