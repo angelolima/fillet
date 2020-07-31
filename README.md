@@ -1,6 +1,7 @@
 README - Guia de instalçao do APP.
 
 1) Na sua base de dados execute a query abaixo para criar a tabela Optin:
+<code>
 CREATE TABLE `optin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) DEFAULT NULL,
@@ -11,6 +12,7 @@ CREATE TABLE `optin` (
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+</code>
 
 2) Na estrutura de pasta SRC/CONFIG, abra o arquivo db-config.js e altere os dados de conexão com o seu banco.
 
