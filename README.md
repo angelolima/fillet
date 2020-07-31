@@ -16,4 +16,6 @@ CREATE TABLE `optin` (
 
 3) Na raiz do projeto execute o comando: $ npm install.
 
-4) Após a instalação, execute $ node app.js
+4) Após a instalação, execute $ node app.js - A aplicação irá rodar na portal 8080. 
+   Para acessar digite no navegador: http://localhost:8080
+   O link API, envia para uma tela de consumo dos dados dinâmico onde utilizo o último parametro da URL como o nome da base de dados, ou seja, http://localhost:8080/api/view/optin o /optin pode ser trocado por /cliente ou /usuarios assim acessando a tabela que desejar.
