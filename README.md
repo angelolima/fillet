@@ -36,16 +36,6 @@ Na raiz do projeto execute o comando:
 Após a instalação, execute 
 ## $ node app.js
 
-```html
-let config = {
-    host     : 'localhost',
-    port     : 3306,
-    user     : 'root',
-    password : '****',
-    database : 'base'
-};
-```
-
 A aplicação irá rodar na portal 8080.\
 Para acessar digite no navegador: http://localhost:8080 \
 O link API, envia para uma tela de consumo dos dados dinâmico onde utilizo o último parametro da URL como o nome da base de dados, ou seja, http://localhost:8080/api/view/optin o /optin pode ser trocado por /cliente ou /usuarios assim acessando a tabela que desejar.
